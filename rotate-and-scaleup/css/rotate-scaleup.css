@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+body {
+    background: #eee;
+}
+.wrapper {
+    background: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    margin-top: 56px;
+}
+#ball {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    background: salmon;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 50%;
+    position: relative;
+    transition: 2s;
+}
+#ball span {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Animation */
+#ball {
+    animation: rotateScaleUp 2s infinite;
+}
+
+
+/* Keyframe */
+@keyframes rotateScaleUp {
+    from {
+
+    }
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
+}
